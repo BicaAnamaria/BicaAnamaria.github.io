@@ -1,101 +1,151 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>My page title</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>My Portofolio</title>
   </head>
 
-  <body>
- 
-
-    <header>
-      <h1>Header</h1>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-     
-
-      <form>
-        <input type="search" name="q" placeholder="Search query" />
-        <input type="submit" value="Go!" />
-      </form>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #39b7bb" shadow-sm>
+      <div class="container">
+        <a class="navbar-brand" href="#">Portofolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
     </nav>
+    <!-- End  -->
+    
+    <!-- Intro -->
+    <div class="intro text-center">
+        <img src="img.png" alt="Gilbert Siahaan" width="200" class="circle img-thumbnail">
+        <h1 class="display-4">Hello, I'm Anamaria</h1>
+        <p class="lead">A Master Degree Student in Big Data</p>
+		<p></p>
+		<br>
+		<br>
+      </div>
+    <!-- End  -->
+	
+    <!-- About -->
+    <section id="about">
+    <div class="container">
 
-   
-    <main>
-      
-      <article>
-        <h2>Article heading</h2>
+    </div>
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2>About Me</h2>
+      </div>
+      <div class="row justify-content-center fs-5 text-center">
+        <div class="col-4">
+          <p>Just finished a Bachelor Degree in Computer Science in 2022 at the West University of Timisoara. <br>Currently working at Nokia, part time as a Working Student in CNS.</p>
+        </div>
+        <div class="col-4">
+          <p> Projects can be found at <a href="https://github.com/BicaAnamaria/">Github Link</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7f4f5" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,186.7C672,171,768,149,864,133.3C960,117,1056,107,1152,117.3C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- End  -->
+	
+    <!-- Projects -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Projects Gallery</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 ">
+            <div class="card">
+              <img src="vacc_batrani.png" class="card-img-top" alt="projects">
+              <div class="card-body text-center">
+                <p class="card-text">@BachelorDegreeProject</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="img1.png" class="card-img-top" alt="projects">
+              <div class="card-body text-center">
+                <p class="card-text">@TWProject</p>
+              </div>
+            </div>
+          </div><div class="col-4">
+            <div class="card">
+              <img src="img2.png" class="card-img-top" alt="projects">
+              <div class="card-body text-center">
+                <p class="card-text">@Spellchecker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7f4f5" fill-opacity="1" d="M0,160L48,186.7C96,213,192,267,288,277.3C384,288,480,256,576,245.3C672,235,768,245,864,229.3C960,213,1056,171,1152,144C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- End -->
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
-          lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
-          viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
-          et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
-          congue enim, ut porta lorem lacinia consectetur.
-        </p>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+        <div class="col">
+        <h2>Contact Me</h2>
+        </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name </label>
+                <input type="text" class="form-control" id="name" aria-describedby="name">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email">
+                <div class="mb-3">
+                  <label for="Message" class="form-label">Message</label>
+                  <textarea class="form-control" id="Message" rows="3"></textarea>
+                </div>
+              <button type="submit" class="btn btn-danger">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End  -->
 
-        <h3>Subsection</h3>
+    <!-- Footer -->
+    <footer  class="bg-primary text-white text-center pb-3">
+      <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> By <a href="https://www.instagram.com/syncgio" class="text-white fw-bold">Ana</a></p>
+    </footer>
+    <!-- End Footer -->
 
-        <p>
-          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
-          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
-        </p>
-
-        <p>
-          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
-          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
-          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
-        </p>
-
-        <h3>Another subsection</h3>
-
-        <p>
-          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
-          soclis natoque penatibus et manis dis parturient montes, nascetur
-          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
-          facilisis semper ac in est.
-        </p>
-
-        <p>
-          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
-          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
-          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
-          diam iaculis velit, is fringille sem nunc vet mi.
-        </p>
-      </article>
-
-
-      <aside>
-        <h2>Related</h2>
-
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well…</a></li>
-        </ul>
-      </aside>
-    </main>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
     <footer>
-      <p>©Copyright 2050 by me. All rights reversed.</p>
+      <p>©Copyright 2023 by me. All rights reversed.</p>
     </footer>
   </body>
 </html>
